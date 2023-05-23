@@ -1,0 +1,60 @@
+{
+    "text": "Menú Principal",
+    "items": [
+        {
+            "text": "Inicio",
+            "href": "/"
+        },
+        {
+            "text": "Proyectos",
+            "href": "/projects/"
+        },
+        {
+            "text": "Contacto",
+            "href": "/contact/"
+        },
+        {
+            "text": "Qwik Oficial",
+            "items": [
+                {
+                    "text": "Documentación",
+                    "href": "https://qwik.builder.io/docs/"
+                },
+                {
+                    "text": "Playground",
+                    "href": "https://qwik.builder.io/examples/"
+                },
+                {
+                    "text": "Curso GRATIS",
+                    "href": "https://medium.com/@mugan86/list/qwik-paso-a-paso-desde-0-al-detalle-e7df8b471166"
+                },
+                {
+                    "text": "Qwik en Español - Ayuda",
+                    "href": "https://github.com/Qwik-Spanish/qwik-i18n-translate-es"
+                }
+            ]
+        },
+        {
+            "text": "Componentes",
+            "items": [
+                {
+                    "text": "Inicio",
+                    "href": "https://qwik.builder.io/docs/components/overview/"
+                },
+                {
+                    "text": "Tareas y Ciclos de Vida",
+                    "items": [
+                        {
+                            "text": "Inicio",
+                            "href": "https://qwik.builder.io/docs/components/tasks/#tasks"
+                        },
+                        {
+                            "text": "useTask",
+                            "href": "[introduction/index.md](https://qwik.builder.io/docs/components/tasks/#usetask)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

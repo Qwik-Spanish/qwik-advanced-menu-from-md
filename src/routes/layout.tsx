@@ -1,32 +1,23 @@
-import { component$, Slot, useStyles$, useTask$ } from "@builder.io/qwik";
-import { useContent } from "@builder.io/qwik-city";
-
+import { component$, Slot, useStyles$, useTask$ } from '@builder.io/qwik';
+import { useContent } from '@builder.io/qwik-city';
+import menuStyles from './menu.css?inline'
 export default component$(() => {
-  useStyles$(`
-  .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .menu li a {
-    text-decoration: none;
-    color: #000;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .menu li a:hover {
-    background-color: #f0f0f0;
-  }
-  `)
+  useStyles$(menuStyles);
   const { menu } = useContent();
+  
+  useTask$(()=> {
+    console.log(menu?.text);
+    console.log(menu)
+    menu?.items?.map((item: any) => {
+      console.log(item)
+      console.log(item?.items?.length)
+      if (item?.items?.length > 1) {
+        console.log(item.items)
+      } else {
+        console.log('Principal', item.text, item.items[0].href)
+      }
+    })
+  })
   return (
     <>
       <ul class="menu">
@@ -38,6 +29,7 @@ export default component$(() => {
             </li>
           ))}
       </ul>
+      <br />
       <Slot />
     </>
   );
