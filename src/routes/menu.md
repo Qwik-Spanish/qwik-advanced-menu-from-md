@@ -8,9 +8,7 @@
 
 - [-](/projects)
 
-## Contacto
 
-- [-](/contact)
 
 ## Qwik Oficial
 
@@ -22,8 +20,10 @@
 ## Componentes
 
 - [Inicio](https://qwik.builder.io/docs/components/overview/)
+- [Tareas y Ciclos de Vida](https://qwik.builder.io/docs/components/tasks/#tasks)
   
-### Tareas y Ciclos de Vida
+## Contacto
 
-- [Inicio](https://qwik.builder.io/docs/components/tasks/#tasks)
-- [useTask]([introduction/index.md](https://qwik.builder.io/docs/components/tasks/#usetask))
+- [-](/contact)
+
+

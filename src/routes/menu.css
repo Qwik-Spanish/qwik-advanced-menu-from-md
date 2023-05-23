@@ -27,7 +27,8 @@
     line-height: 30px;
     border-bottom: #CCC 1px solid;
     border-right: #CCC 1px solid;
-    width: 100%;
+    min-width: 100%;
+    width: 140%;
   }
   
   .child li a {
